@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: o;
+}
+
+
+$turq: rgba(129, 236, 236,1.0);
+$yell: rgba(255, 234, 167,1.0);
+$bree: rgba(178, 190, 195,1.0);
+$blue: rgba(116, 185, 255,1.0);
+$grey: rgba(45, 52, 54,1.0);
+$dow: 1px 1px 15px 15px rgba(133,133,133,0.5);
+ 
+
+
+
+
+
+
+
+
+
+
+/* Grid system */
+body {
+  display:flex;
+  justify-content: center;
+  background-color: $turq;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align: justify;
+  
+  }
+
+
+  .page-wrapper {
+      display: grid; 
+      width: 80%;
+      height: 100%;
+      box-shadow: $dow;
+      grid-template-areas: ". head ."
+                           "nav head nav"
+                           ".  foot .";
+    }
+
+    .intro {
+        grid-template-areas: head;
+        background-image: url(../Pictures//low-years-122568-unsplash.jpg);
+        background-size:  contain;
+        background-repeat: round;
+        
+
+        
+        
+
+      header {
+        grid-template-areas: head;
+        text-align: center;
+        font-size: 200%;
+        font-style: italic;
+        color: $grey;
+        
+        
+      }
+
+      .summary {
+        padding-top: 50px;
+        grid-template-areas: head1;
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+        
+      }
+
+      
+
+      .preamble {
+        padding-top: 50px;
+        grid-template-areas: head2;
+        justify-content: center;
+        line-height: 50px;
+        
+      }
+      }
+
+    #zen-supporting {
+      grid-template-areas: head3;
+      display: flex;
+      flex-direction: row;
+      background-color: $yell;
+      .explanation {
+        text-align: center;
+        order: 2;
+
+      }
+      .participation {
+        text-align: center;
+        order: 3;
+      }
+      .benefits {
+        text-align: center;
+        order: 1;
+      }
+      .requirements {
+        text-align: center;
+        order: 4;
+        
+      }
+        
+
+      }
+
+      .wrapper {
+        display: flex;
+        padding: 50px;
+        justify-content: center;
+        text-align: justify;
+        line-height: 25px;
+        background-color: $bree;
+      }
+
+      footer {
+        display: grid;
+        align-content: space-around;
+        border-right: 2px double $grey;
+
+
+      }
+    
+
+      
+      
+    
+    
+
+    
+

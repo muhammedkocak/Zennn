@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: o;
+}
+
+/* Grid system */
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #81ecec;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  text-align: justify;
+}
+
+.page-wrapper {
+  display: -ms-grid;
+  display: grid;
+  width: 80%;
+  height: 100%;
+  -webkit-box-shadow: 1px 1px 15px 15px rgba(133, 133, 133, 0.5);
+          box-shadow: 1px 1px 15px 15px rgba(133, 133, 133, 0.5);
+      grid-template-areas: ". head ." "nav head nav" ".  foot .";
+}
+
+.intro {
+      grid-template-areas: head;
+  background-image: url(../Pictures//low-years-122568-unsplash.jpg);
+  background-size: contain;
+  background-repeat: round;
+}
+
+.intro header {
+      grid-template-areas: head;
+  text-align: center;
+  font-size: 200%;
+  font-style: italic;
+  color: #2d3436;
+}
+
+.intro .summary {
+  padding-top: 50px;
+      grid-template-areas: head1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: justify;
+}
+
+.intro .preamble {
+  padding-top: 50px;
+      grid-template-areas: head2;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 50px;
+}
+
+#zen-supporting {
+      grid-template-areas: head3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #ffeaa7;
+}
+
+#zen-supporting .explanation {
+  text-align: center;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+#zen-supporting .participation {
+  text-align: center;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+#zen-supporting .benefits {
+  text-align: center;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+#zen-supporting .requirements {
+  text-align: center;
+  -webkit-box-ordinal-group: 5;
+      -ms-flex-order: 4;
+          order: 4;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: justify;
+  line-height: 25px;
+  background-color: #b2bec3;
+}
+
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  border-right: 2px double #2d3436;
+}
+/*# sourceMappingURL=main.css.map */
